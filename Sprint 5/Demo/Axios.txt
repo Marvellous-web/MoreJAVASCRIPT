@@ -1,0 +1,6 @@
+To Use Axios
+
+Add the below script tag in index.html or any other html page you created for designing.
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>

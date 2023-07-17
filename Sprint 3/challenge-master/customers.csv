@@ -1,0 +1,83 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,
+Add new customer,Update customer details
+URL:
+1. http://localhost:3001/customers
+2. http://localhost:3001/customers/1
+3. http://localhost:3001/customers?name=Jennifer
+4. http://localhost:3001/customers?email=Jessica@live.com
+5. http://localhost:3001/customers
+6. http://localhost:3001/customers/6
+
+METHOD:
+1. GET 2. GET, 3. GET, 4. GET, 5. POST, 6. PUT
+"Request Body : json 
+"Content Type : json
+Body ,,,,,,
+,,,,,,
+HTTP Response: json object
+Status Code: for all successful request status code is "400"
+Status Message: for all successful request status code is "OK"
+Body :
+2) {
+    "id": 1,
+    "name": "David",
+    "email": "david@gmail.com",
+    "phoneNumber": "+11527896543",
+    "address": {
+        "streetName": "Court Street",
+        "streetNo": "123",
+        "postalCode": "2617"
+    }
+}
+3) [
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    }
+]
+4) [
+    {
+        "id": 4,
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    }
+]
+
+5) [
+    {
+        "id": 10,
+        "name": "Pooja",
+        "email": "pooja@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    }
+]
+
+6) {
+    "id": 6,
+    "name": "Pooja",
+    "email": "pooja@live.com",
+    "phoneNumber": "+11523456732",
+    "address": {
+        "streetName": "shivaji nagae",
+        "streetNo": "301",
+        "postalCode": "453201"
+    }
+}

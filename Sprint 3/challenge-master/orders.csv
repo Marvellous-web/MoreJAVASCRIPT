@@ -1,0 +1,158 @@
+HTTP Request,View all orders,View all orders based on specific date,
+View all orders placed by a specific customer,View all orders by delivery status,Accept Order details,
+Modify Order,Cancel Order
+
+
+URL,,,,,,,
+1. http://localhost:3002/orders     [GET]
+2. http://localhost:3002/orders?orderDate=06-22-2022    [GET]
+3. 
+4. http://localhost:3002/orders?deliveryStatus=delivered    [GET]
+5. http://localhost:3002/orders                             [POST]
+6. http://localhost:3002/orders/606                          [PUT]
+7. http://localhost:3002/orders/605                         [DELETE]
+
+METHOD,,,,,,,
+"Request Body 		",,,,,,, json
+"Content Type	",,,,,,, json object
+Body ,,,,,,,
+,,,,,,,
+HTTP Response,,,,,,,[JSON Object]
+Status Code,,,,,,, [400]
+Status Message,,,,,,,[OK]
+Body,,,,,,,
+2) [
+    {
+        "id": 601,
+        "orderDate": "06-22-2022",
+        "deliveryStatus": "delivered",
+        "items": [
+            {
+                "itemName": "Berry Blast",
+                "price": 1.72
+            },
+            {
+                "itemName": "Emilgrana & Mushroom Dip",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    }
+]
+
+4) [
+    {
+        "id": 601,
+        "orderDate": "06-22-2022",
+        "deliveryStatus": "delivered",
+        "items": [
+            {
+                "itemName": "Berry Blast",
+                "price": 1.72
+            },
+            {
+                "itemName": "Emilgrana & Mushroom Dip",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    },
+    {
+        "id": 604,
+        "orderDate": "06-27-2022",
+        "deliveryStatus": "delivered",
+        "items": [
+            {
+                "itemName": "Berry Blast",
+                "price": 1.72
+            },
+            {
+                "itemName": "Garlic Bread Mozzarella",
+                "price": 45.99
+            },
+            {
+                "itemName": "Risotto Con Funghi Veg",
+                "price": 75
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    }
+]
+5)  {
+        "id": 606,
+        "orderDate": "09-22-2022",
+        "deliveryStatus": "delivered",
+        "items": [
+            {
+                "itemName": "nuddles",
+                "price": 1.72
+            },
+            {
+                "itemName": "Pizza",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Utkarsha",
+            "email": "utk@gmail.com",
+            "phoneNumber": "8698846149",
+            "address": {
+                "streetName": "Mumbai",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    }
+
+6)  {
+        "id": 606,
+        "orderDate": "09-22-2022",
+        "deliveryStatus": "cancel order",
+        "items": [
+            {
+                "itemName": "nuddles",
+                "price": 1.72
+            },
+            {
+                "itemName": "Pizza",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Utkarsha",
+            "email": "utk@gmail.com",
+            "phoneNumber": "8698846149",
+            "address": {
+                "streetName": "Mumbai",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    }

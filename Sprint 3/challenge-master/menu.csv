@@ -1,0 +1,159 @@
+HTTP Request,For all menu items,Fetch menu items by category (starters / beverages / main course),
+Fetch menu items by cuisine (Chinese / Asian / French / Mexican),Fetch menu item by id,Add menu item,
+Update menu item,Delete menu items
+
+URL :
+1.  http://localhost:3000/menu
+2.  http://localhost:3000/menu?category=Starters
+3.  http://localhost:3000/menu?cuisine= French
+4.  http://localhost:3000/menu/101
+5.  http://localhost:3000/menu
+6.  http://localhost:3000/menu/105
+7.  http://localhost:3000/menu/310
+ 
+METHOD:
+1 to 4: "GET",
+5: "POST",
+6: "PUT",
+7: "DELETE"
+"Request Body : json
+"Content Type :json
+Body ,,,,,,,
+,,,,,,,
+HTTP Response: for 1 to 6 is json object, for 7 empty json object "{}"
+Status Code: for all url status cose is "400" 
+Status Message: for all url status cose is "OK" 
+Body,,,,,,,
+2)  [
+    {
+        "id": 101,
+        "category": "Starters",
+        "itemName": "Dough Balls Doppio",
+        "price": 33.99,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 102,
+        "category": "Starters",
+        "itemName": "Mix Salad Bowl",
+        "price": 20,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 103,
+        "category": "Starters",
+        "itemName": "Garlic Bread Mozzarella",
+        "price": 45.99,
+        "cuisine": "Italian"
+    },
+    {
+        "id": 104,
+        "category": "Starters",
+        "itemName": "Veg Wrap",
+        "price": 35,
+        "cuisine": "French"
+    },
+    {
+        "id": 105,
+        "category": "Starters",
+        "itemName": "Spinach and Artichoke Tortilla Crisp",
+        "price": 58,
+        "cuisine": "French"
+    },
+    {
+        "id": 106,
+        "category": "Starters",
+        "itemName": "Chocolate Cheesecake",
+        "price": 48,
+        "cuisine": "Italian"
+    },
+    {
+        "id": 107,
+        "category": "Starters",
+        "itemName": "Mini Vegetable Lasagna",
+        "price": 68.99,
+        "cuisine": "Italian"
+    },
+    {
+        "id": 108,
+        "category": "Starters",
+        "itemName": "Potato Wedges",
+        "price": 42.99,
+        "cuisine": "Mexican"
+    },
+    {
+        "id": 109,
+        "category": "Starters",
+        "itemName": "Brownie",
+        "price": 60.99,
+        "cuisine": "Mexican"
+    },
+    {
+        "id": 110,
+        "category": "Starters",
+        "itemName": "Emilgrana & Mushroom Dip",
+        "price": 41.4,
+        "cuisine": "Asian"
+    }
+]
+
+3)   {
+        "id": 101,
+        "category": "Starters",
+        "itemName": "Dough Balls Doppio",
+        "price": 33.99,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 102,
+        "category": "Starters",
+        "itemName": "Mix Salad Bowl",
+        "price": 20,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 110,
+        "category": "Starters",
+        "itemName": "Emilgrana & Mushroom Dip",
+        "price": 41.4,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 308,
+        "category": "Main Course",
+        "itemName": "Pomodoro Pesto Pizza By the Slice",
+        "price": 60,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 309,
+        "category": "Main Course",
+        "itemName": "Cheese Burst Pizza",
+        "price": 50,
+        "cuisine": "Asian"
+    },
+    {
+        "id": 315,
+        "category": "starter",
+        "itemName": "Special Pasta",
+        "price": 180,
+        "cuisine": "Asian"
+    }
+
+5)  {
+        "id": 315,
+        "category": "Main Course",
+        "itemName": "Special Pasta",
+        "price": 80,
+        "cuisine": "Asian"
+    }
+
+6) {
+    "id": 315,
+    "category": "starter",
+    "itemName": "Special Pasta",
+    "price": 180,
+    "cuisine": "Asian"
+}
+
+7) {}

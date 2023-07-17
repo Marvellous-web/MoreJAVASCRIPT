@@ -1,0 +1,50 @@
+{
+    "paths": {
+        "/orders":{
+            "get":{
+                "summary":"",
+                "description":"",
+                "responses":{
+                    "200":{
+                        "description":"",
+                        "content-type":"",
+                        "type":"array",
+                        "order":{
+                            "orderId":"integer",
+                            "orderDate":"string",
+                            "deliveryStatus":"string",
+                            "items":[
+                                {
+                                    "itemName":"string",
+                                    "price":"integer"
+                                }
+                            ],
+                            "customer":{
+                                "name":"string",
+                                "email":"string",
+                                "phoneNumber":"string",
+                                "address":{
+                                    "streetName":"string",
+                                    "streetNo":"string",
+                                    "postalCode":"string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/orders/{id}":{
+            "parameter":{
+                "id":{
+                    "type":"integer",
+                    "required":false
+                }
+            },
+            "get":{
+                
+            }
+        }
+        
+    }
+}

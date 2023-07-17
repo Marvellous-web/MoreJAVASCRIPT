@@ -1,0 +1,14 @@
+/* Write the style code for Contact App here */
+table{
+    /* border: 2px solid; */
+    margin-left: 20%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd;
+}
+body{
+    width: 70%;
+}
+
+h2{
+    margin-left: 10%;
+}

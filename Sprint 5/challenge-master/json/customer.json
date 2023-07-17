@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "custID": "101",
+      "name": "Utkarsha Vasudeo Malpure",
+      "custPasword": "1234",
+      "custConfirmPassword": "1234",
+      "email": "utkarshamalpure31@gmail.com",
+      "contact": "08698846149",
+      "address": "at post kalwan pandit hari nagar,Tal kalwan,Dist Nashik",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+"HTTP Request		",For Adding new movie with id 514,For Adding new movie with id 503
+"URL		",,  http://localhost:3000/Movies
+"METHOD	",,      "POST"
+"Request Body 		",,
+"Content Type	",,json
+Body ,,
+"HTTP Response		",,json object
+"Status Code		",,for 514=200, for 503=500
+"Status Message	",,    for 514=OK,  for 503=Internal Server Error
+Body,,
+1. {
+            "id": 514,
+            "movieTitle": "Harry Potter",
+            "yearOfRelease": 2004,
+            "director": "J K rowlling",
+            "cast": [
+                {
+                    "actorName": "daniel radcliffe",
+                    "onScreenName": "harry potter"
+                },
+                {
+                    "actorName": "emma watson",
+                    "onScreenName": "harmaione"
+                }
+            ],
+            "rating": 8.3,
+            "genre": "Action",
+            "isOnOTT": true,
+            "Ott": "Netflix"
+        }
+2. Error: Insert failed, duplicate id

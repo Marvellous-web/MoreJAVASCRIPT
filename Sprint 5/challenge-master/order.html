@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order App</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">View Menu</a>
+        <a href="customer.html">Customer Registration</a>
+        <a href="order.html">Place an Order</a>
+    </div>
+    <br>
+    <h1 >Pizza Ordar App </h1>
+     <!-- Paste the code developed in sprint 5 challenge to create order form here  -->
+    <br>
+<div>
+    <h2>Fill up Order Details here </h2>
+    <form id="formdiv" >
+        Order Id : <br> <input type="text" id="id" name="id" required> <br> <br>
+        Order Date : <br> <input type="date" id="dt" name="dt" > <br> <br>
+        Customer name : <br><input type="text" id="name" name="name" required> <br> <br>
+        Email Id : <br><input type="email" id="emailId" name="emailID" required><br> <br>
+        Contact Number : <br> <input type="number" id="contno" name="contno" required maxlength="10"> <br> <br>
+        Customer Address : <br> <input type="text" id="address" name="address" required maxlength="10"> <br> <br>
+        Add Order  <button value="+" id="btn">+</button>
+        <!-- <input type="button" id="btn" value="+" style="width: 4%; border: none;"> <br>  -->
+    </form>
+    <form id="frm" hidden >
+        Category : <br> <input type="text" name="cat" id="cat" required> <br> <br>
+        Item Name : <br> <input type="text" name="item" id="item" required> <br> <br>
+        Price : <br> <input type="number" name="pr" id="pr" placeholder="0"  required><br> <br>
+        Quantity : <br> <input type="number" name="qty" id="qty" placeholder="0" required><br> <br>
+    </form>
+    <button id="b1">Total Amount</button> <input type="text" id="i1" placeholder="0" readonly style="width: 15%; border: solid 1px; height: 3%; ">
+    <br> <br>
+    <button id="save" onclick="saveOrder()">Save order</button>
+</div>
+   
+</body>
+</html>

@@ -1,0 +1,12 @@
+"HTTP Request			",Delete movie by id 501,Delete movie by id 550
+"URL				",,  http://localhost:3000/Movies/501
+                         http://localhost:3000/Movies/550
+
+"METHOD	",,               "Delete" 
+"HTTP Response				",,empty json object
+"Status Code			",,for 501=status code is 200, for 550=status code is 404
+"Status Message		",,for 501=status msg is OK, for 501=status msg is Not found
+"Body	",,
+1. {}
+1. {}
+

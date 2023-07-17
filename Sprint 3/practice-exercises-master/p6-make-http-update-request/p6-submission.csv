@@ -1,0 +1,32 @@
+"HTTP Request		",To update movie for id 514,To update movie for id 500
+"URL		",,  http://localhost:3000/Movies/514 
+"METHOD	",,      "PUT"
+"Request Body 		",,json
+"Content Type	",,
+Body ,,
+"HTTP Response		",,json object
+"Status Code		",, for 514=200, 500=404
+"Status Message	",,     for 514=OK, 500=not found
+Body,,
+1) {
+    "id": 514,
+    "movieTitle": "Harry Potter",
+    "yearOfRelease": 2004,
+    "director": "J K rowlling",
+    "cast": [
+        {
+            "actorName": "daniel radcliffe",
+            "onScreenName": "harry potter"
+        },
+        {
+            "actorName": "emma watson",
+            "onScreenName": "harmaione"
+        }
+    ],
+    "rating": 8.3,
+    "genre": "Action",
+    "isOnOTT": true,
+    "Ott": "Netflix"
+}
+
+2. {}

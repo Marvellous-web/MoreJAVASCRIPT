@@ -1,0 +1,33 @@
+{
+    "flights": [
+        {
+            "from":"Chicago",
+            "to":"NewYork",
+            "departure-date":"22-jun-2022",
+            "flightsDetails":[
+                {
+                    "flightno":"DL551",
+                    "airlines":"delta",
+                    "departure-time":"06:00:00",
+                    "arrival-time":"09:16:00",
+                    "stop overs":"",
+                    "isDirect":true,
+                    "departure-from":"ORD",
+                    "arrival-at":"LGA"
+                },
+                {
+                    "flightno":"UA2606",
+                    "airlines":"united airlines",
+                    "departure-time":"19:45:00",
+                    "arrival-time":"23:10:00",
+                    "stop overs":"",
+                    "isDirect":true,
+                    "departure-from":"ORD",
+                    "arrival-at":"LGA"
+                }
+            ]
+        }
+        
+        
+    ]
+}

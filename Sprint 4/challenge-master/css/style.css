@@ -1,0 +1,21 @@
+/* Write style code here*/
+h1{
+    background-color: blue;
+    height: 10%;
+
+    
+}
+input{
+    height: 5%;
+    width: 55%;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+}
+div{
+    margin-left: 30%;
+    
+}
+#ph{
+    
+}

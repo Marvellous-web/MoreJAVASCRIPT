@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <!-- <script src="script.js" type="text/javascript"></script> -->
+</head>
+<body>
+    <!-- Create order form with various fields as mentioned in README file -->
+    <h1 >Pizza Ordar App </h1>
+    <br>
+<div>
+    <h2>Fill up Order Details here </h2>
+    <form id="formdiv" >
+        Order Id : <br> <input type="text" id="id" name="id" required> <br> <br>
+        Order Date : <br> <input type="date" id="dt" name="dt" > <br> <br>
+        Customer name : <br><input type="text" id="name" name="name" required> <br> <br>
+        Email Id : <br><input type="email" id="emailId" name="emailID" required><br> <br>
+        Contact Number : <br> <input type="number" id="contno" name="contno" required maxlength="10"> <br> <br>
+        Customer Address : <br> <input type="text" id="address" name="address" required maxlength="10"> <br> <br>
+        Add Order  <button value="+" id="btn">+</button>
+        <!-- <input type="button" id="btn" value="+" style="width: 4%; border: none;"> <br>  -->
+    </form>
+    <form id="frm" hidden >
+        Category : <br> <input type="text" name="cat" id="cat" required> <br> <br>
+        Item Name : <br> <input type="text" name="item" id="item" required> <br> <br>
+        Price : <br> <input type="number" name="pr" id="pr" placeholder="0"  required><br> <br>
+        Quantity : <br> <input type="number" name="qty" id="qty" placeholder="0" required><br> <br>
+    </form>
+    <button id="b1">Total Amount</button> <input type="text" id="i1" placeholder="0" readonly style="width: 15%; border: solid 1px; height: 3%; ">
+    <br> <br>
+    <button id="save" onclick="saveOrder()">Save order</button>
+</div>
+<div id="d1">
+
+</div>
+
+<script>
+    //funtion for display add order details
+let submitbutton=document.getElementById("btn");
+submitbutton.addEventListener("click",displayForm);
+function displayForm()
+{
+    // event.preventDefault();
+    var frm1=document.getElementById("frm");
+    frm1.style.display="block";
+}
+
+//function for calculate total amount
+let amtbtn=document.getElementById("b1");
+amtbtn.addEventListener("click",calculate);
+function calculate(){
+    var price1=parseInt(document.getElementById("pr").value);
+    var amount1=parseInt(document.getElementById("qty").value);
+    var total=price1*amount1;
+    document.getElementById("i1").value=total
+    alert("Total amount to be paid :" + total);
+}
+
+//
+let arr=[];
+function saveOrder(){
+    var date1=document.getElementById("dt").value;
+    var name1=document.getElementById("name").value;
+    var emailId1=document.getElementById("emailId").value;
+    var contactntno=document.getElementById("contno").value;
+    var addr=document.getElementById("address").value;
+    var cat1=document.getElementById("cat").value;
+    var item1=document.getElementById("item").value;
+    var p11=document.getElementById("pr").value;
+    var q11=document.getElementById("qty").value;
+    var v1=document.getElementById("i1").value;
+    var obj={
+        "CustomerId":document.getElementById("id").value,
+        "Orderdate":date1,
+        "Customername":name1,
+        "customeremailId":emailId1,
+        "Contactnumber":contactntno,
+        "Customeraddress":addr,
+        "catogery":cat1,
+        "item":item1,
+        "price":p11,
+        "quantity":q11,
+        "TotalAmount":v1
+    };
+    arr.push(obj);
+    console.log(arr);
+    alert("Thank You!! Your Order Placed Successfully")
+
+}
+
+
+
+</script>
+
+</body>
+</html>
